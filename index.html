@@ -1,0 +1,536 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+        <title>Christophe L. - Développeur Web</title>
+
+        <meta name="title" content="Christophe L. - Développeur Web" />
+        <meta
+            name="description"
+            content="Bienvenue sur mon Portfolio. Je m'appelle Christophe LEMOINE et je vous propose mes compétences pour le développement de vos applications web."
+        />
+        <meta
+            name="keywords"
+            content="Développement,Développeur,Web,Mobile,PHP,HTML,Javascript,JS,CSS,Node,Express,Framework,React,ReactJs,Service"
+        />
+        <meta name="robots" content="index, follow" />
+        <meta name="googlebot" content="index, follow" />
+        <link rel="canonical" href="https://pantaflex44.me" />
+        <meta name="rating" content="general" />
+        <meta name="referrer" content="no-referrer" />
+
+        <meta name="language" content="French" />
+        <meta name="author" content="Christophe Lemoine" />
+        <meta name="copyright" content="Copyright (c)2022 Christophe LEMOINE" />
+
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://pantaflex44.me" />
+        <meta property="og:title" content="Christophe L. - Développeur Web" />
+        <meta
+            property="og:description"
+            content="Bienvenue sur mon Portfolio. Je m'appelle Christophe LEMOINE et je vous propose mes compétences pour le développement de vos applications web."
+        />
+        <meta property="og:image" content="https://pantaflex44.me/og-image.jpg" />
+        <meta property="og:image:width" content="1200" />
+        <meta property="og:image:height" content="627" />
+        <meta property="og:url" content="https://pantaflex44.me" />
+        <meta property="og:type" content="website" />
+        <meta property="og:locale" content="fr_FR" />
+
+        <meta property="twitter:card" content="summary_large_image" />
+        <meta property="twitter:url" content="https://pantaflex44.me" />
+        <meta property="twitter:title" content="Christophe L. - Développeur Web" />
+        <meta
+            property="twitter:description"
+            content="Bienvenue sur mon Portfolio. Je m'appelle Christophe LEMOINE et je vous propose mes compétences pour le développement de vos applications web."
+        />
+        <meta property="twitter:image" content="https://pantaflex44.me/og-image.jpg" />
+        <meta name="twitter:image:alt" content="https://pantaflex44.me" />
+        <meta name="twitter:site" content="@pantaflex44" />
+
+        <link href="./style.css" rel="stylesheet" />
+        <link rel="icon" href="./logo.svg" sizes="any" type="image/svg+xml" />
+        <link rel="icon" href="./favicon.ico" />
+        <link rel="icon" href="./favicon.png" type="image/png" />
+
+        <script type="application/ld+json">
+            {
+                "@context": "http://schema.org/",
+                "@type": "WebSite",
+                "url": "https//pantaflex44.me",
+                "potentialAction": {
+                    "@type": "SearchAction",
+                    "target": "https//pantaflex44.me/search/{search_term_string}",
+                    "query-input": "required name=search_term_string"
+                }
+            }
+        </script>
+        <script type="application/ld+json">
+            {
+                "@context": "http://schema.org/",
+                "@type": "Person",
+                "name": "Christophe LEMOINE",
+                "image": "https://pantaflex44.me/images/CL.jpg",
+                "url": "https://pantaflex44.me",
+                "jobTitle": "Développeur Web et Web mobile",
+                "worksFor": {
+                    "@type": "Organization",
+                    "name": "PF44"
+                },
+                "sameAs": ["https://www.linkedin.com/in/pf44/"]
+            }
+        </script>
+        <script type="application/ld+json">
+            {
+                "@context": "http://schema.org/",
+                "@type": "BreadcrumbList",
+                "itemListElement": [
+                    {
+                        "@type": "ListItem",
+                        "position": 1,
+                        "name": "Christophe LEMOINE - Développeur Web et Web mobile",
+                        "item": "https://pantaflex44.me"
+                    }
+                ]
+            }
+        </script>
+
+        <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js" type="text/javascript"></script>
+        <script src="./scripts.js" defer></script>
+        <script src="./email.js" defer></script>
+
+        <script type="text/javascript" async="" src="https://www.google-analytics.com/analytics.js"></script>
+        <script async="" src="https://www.googletagmanager.com/gtag/js?id=UA-197813282-1"></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag() {
+                dataLayer.push(arguments);
+            }
+            gtag("js", new Date());
+            gtag("config", "UA-197813282-1");
+        </script>
+    </head>
+    <body>
+        <div class="scrollToTop" onclick="document.querySelector('body').scrollIntoView({behavior: 'smooth'});">
+            <img src="./logo.svg" alt="Remonter en haut de la page" title="Remonter en haut de la page" />
+        </div>
+
+        <div class="sticky__menubar">
+            <ul>
+                <li
+                    onclick="document.querySelector('.about').scrollIntoView({behavior: 'smooth'});"
+                    title="Qui suis-je?"
+                    class="sticky__menubar--about"
+                >
+                    Présentation
+                </li>
+                <li
+                    onclick="document.querySelector('.work').scrollIntoView({behavior: 'smooth'});"
+                    title="Une partie de mon travail"
+                    class="sticky__menubar--work"
+                >
+                    Réalisations
+                </li>
+                <li
+                    onclick="document.querySelector('.contact').scrollIntoView({behavior: 'smooth'});"
+                    title="Je ne mort pas ;-)"
+                    class="sticky__menubar--contact"
+                >
+                    Me contacter
+                </li>
+            </ul>
+        </div>
+
+        <header>
+            <div class="content">
+                <div class="shadow-home-1">WEB</div>
+                <div class="shadow-home-2">WEB</div>
+                <div class="shadow-home-3">WEB</div>
+
+                <div class="content__header">
+                    <div class="content__header--title">
+                        <img src="./logo.svg" alt="Mon portfolio" class="content__header--title__logo" />
+                        <div class="content__header--title__text">
+                            <h1 class="content__header--title__text--name">Christophe L.</h1>
+                            <div class="content__header--title__text--description">
+                                <span>Développeur Web</span>
+                                <div>
+                                    <span id="author_age"></span>
+                                    <span id="author_town">Nantes</span>
+                                    <span id="author_country">France</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="content__header--menubar">
+                    <ul>
+                        <li
+                            onclick="document.querySelector('.about').scrollIntoView({behavior: 'smooth'});"
+                            title="Qui suis-je?"
+                        >
+                            Présentation
+                        </li>
+                        <li
+                            onclick="document.querySelector('.work').scrollIntoView({behavior: 'smooth'});"
+                            title="Une partie de mon travail"
+                        >
+                            Réalisations
+                        </li>
+                        <li
+                            onclick="document.querySelector('.contact').scrollIntoView({behavior: 'smooth'});"
+                            title="Je ne mort pas ;-)"
+                        >
+                            Me contacter
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </header>
+
+        <main>
+            <div class="content__main about" data-sticky-menu-classname="sticky__menubar--about">
+                <div class="content">
+                    <div class="shadow-title">Présentation</div>
+                    <h2>
+                        Présentation
+                        <img
+                            src="./cv.svg"
+                            alt="Mon CV"
+                            title="Télécharger mon CV"
+                            onclick="window.open('https://cvdesignr.com/p/61ef0a1e5a25a', '_blank').focus();"
+                        />
+                    </h2>
+                    <div class="about__content">
+                        <p><strong>Il était une fois, un passionné.</strong></p>
+                        <p>
+                            Admiratif du monde merveilleux des nouvelles technologies de l'époque et loin de me douter
+                            d'y participer un jour, je saisis une occasion de récupérer ce que l'on appelait déjà à
+                            l'époque, un "ordinosaure". TO7 de son petit nom, il me fit découvrir un univers intriguant
+                            et passionnant.
+                        </p>
+                        <p>
+                            Piqué au plus profond de ma curiosité, passion naissante, je me mis à collectionner ces
+                            machines sans age jusqu'à posséder mon premier 486. Un DX pour les connaisseurs, affublé
+                            d'un overboost Pentium 75 puis Pentium 100, me voilà parti pour la conquête du monde des OS.
+                            De windows 3.1, en passant par linux et ses distributions récupérées dans les kiosques
+                            (Slackware, Gentoo, Debian, notamment), je fis mes armes et découvris le "codage".
+                        </p>
+                        <p>
+                            Windows et son Visual Basic 6 (pour moi, la suite logique de QBasic ;-) ), en passant par la
+                            découverte du Pascal, du C et du Java, seront les langages de mes premiers pas.
+                        </p>
+                        <p>
+                            Linux étant, Python s'ensuivit. Par la suite, avec les débuts du "Web" moderne, me voici en
+                            direction d'un nouvel univers en voie de développement !
+                        </p>
+                        <p>
+                            Découvrant PHP3, CSS1, et les flocons de neige de Javascript, Netscape, Internet Explorer,
+                            jusqu'aux nouvelles technologies d'aujourd'hui, je n'ai plus quitté le Web qui deviendra mon
+                            avenir dans ce monde numérique.
+                        </p>
+                        <p>
+                            Autodidacte depuis le premier jour, puis formé par l'école Studi, je suis désormais apte à
+                            assimiler toutes les compétences nécessaires pour m'adapter rapidement à l'évolution des
+                            largages du Web, aux nouvelles technologies à notre disposition.
+                        </p>
+                        <p>
+                            Curieux, Passionné, à l'écoute, Motivé, Responsable et Tenace, je propose mes services quant
+                            à la réalisation de sites et d'applications Web et Web mobile. SEO Friendly, réactives,
+                            dynamiques et attrayantes, des maquettes au code, je vous propose mes humbles compétences.
+                        </p>
+
+                        <p><strong>Appétences</strong></p>
+
+                        <ul class="content__main--about__languages">
+                            <li><img src="./linux.svg" alt="Linux" title="Linux" /></li>
+                            <li><img src="./windows.svg" alt="Windows" title="Windows" /></li>
+                            <li><img src="./git.svg" alt="Git" title="Git" /></li>
+                            <li><img src="./github.svg" alt="Github" title="Github" /></li>
+                            <li><img src="./html.svg" alt="HTML" title="HTML" /></li>
+                            <li><img src="./css.svg" alt="CSS" title="CSS" /></li>
+                            <li><img src="./js.svg" alt="Javascript" title="Javascript" /></li>
+                            <li><img src="./nodejs.svg" alt="NodeJs" title="NodeJs" /></li>
+                            <li><img src="./react.svg" alt="ReactJs" title="ReactJs" /></li>
+                            <li><img src="./php.svg" alt="Php" title="Php" /></li>
+                            <li><img src="./python.svg" alt="Python" title="Python" /></li>
+                            <li><img src="./dotnet.svg" alt=".Net" title=".Net" /></li>
+                            <li><img src="./csharp.svg" alt="C#" title="C#" /></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="content__main work" data-sticky-menu-classname="sticky__menubar--work">
+                <div class="content">
+                    <div class="shadow-title">Réalisations</div>
+                    <h2>
+                        Réalisations
+                        <img
+                            src="./github.svg"
+                            alt="Mes projets"
+                            title="Mes projets sur Github"
+                            onclick="window.open('https://github.com/pantaflex44?tab=repositories', '_blank').focus();"
+                            style="filter: invert(1)"
+                        />
+                    </h2>
+
+                    <div class="project">
+                        <h3
+                            class="project__title"
+                            title="Credible sur Github"
+                            onclick="window.open('https://github.com/pantaflex44/ECF-202212-OB-Express-React', '_blank').focus();"
+                        >
+                            Credible
+                            <img src="./github.svg" alt="Credible" />
+                        </h3>
+                        <div class="project__content">
+                            <div class="project__content--description">
+                                Application Web réalisée dans le cadre de l'examen en cours de formation Studi (promo
+                                Gefland - Décembre 2022)<br />
+                                L’objectif du projet est de mener une étude (Analyse des besoins) et développer
+                                l’application web présentée ci-dessous. Il convient également d’élaborer un dossier
+                                d’architecture web qui documente entre autres les choix des technologies, les choix
+                                d’architecture web et de configuration, les bonnes pratiques de sécurité́ implémentées,
+                                etc. Il est également demandé d’élaborer un document spécifique sur les mesures et
+                                bonnes pratiques de sécurité́ mises en place et la justification de chacune d’entre
+                                elles. Les bases de données et tout autre composant nécessaire pour faire fonctionner le
+                                projet sont également accompagnés d’un manuel de configuration et d’utilisation.
+                            </div>
+                            <div class="project__content--screenshot">
+                                <img
+                                    src="https://github.com/pantaflex44/ECF-202212-OB-Express-React/raw/dev/credible.png"
+                                    alt="Credible"
+                                    loading="lazy"
+                                />
+                            </div>
+                            <ul class="project__content--languages">
+                                <li>ExpressJs</li>
+                                <li>NodeJs</li>
+                                <li>ReactJs</li>
+                                <li>JWT</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="project">
+                        <h3
+                            class="project__title"
+                            title="QuickParcelProject sur Github"
+                            onclick="window.open('https://github.com/pantaflex44/QuickParcelProject', '_blank').focus();"
+                        >
+                            QuickParcelProject
+                            <img src="./github.svg" alt="QuickParcelProject" />
+                        </h3>
+                        <div class="project__content">
+                            <div class="project__content--description">
+                                QuickParcelProject use Parcel to build Web app with Sass and React modules. The Jest
+                                module is used to test your scripts. CSS generated files, use Sass and AutoPrefixer
+                                module. JS and CSS files are minified in 'production' mode.
+                            </div>
+                            <div class="project__content--screenshot">
+                                <img
+                                    src="https://github.com/pantaflex44/QuickParcelProject/raw/main/src/assets/QuickParcelProject.png"
+                                    alt="QuickParcelProject"
+                                    loading="lazy"
+                                />
+                            </div>
+                            <ul class="project__content--languages">
+                                <li>NodeJs</li>
+                                <li>Parcel</li>
+                                <li>Jest</li>
+                                <li>ReactJs</li>
+                                <li>SASS</li>
+                                <li>CSS</li>
+                                <li>Javascript</li>
+                                <li>Rest API</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="project">
+                        <h3
+                            class="project__title"
+                            title="PythonBaseApi sur Github"
+                            onclick="window.open('https://github.com/pantaflex44/PythonBaseApi', '_blank').focus();"
+                        >
+                            PythonBaseApi
+                            <img src="./github.svg" alt="PythonBaseApi" />
+                        </h3>
+                        <div class="project__content">
+                            <div class="project__content--description">
+                                Project base to create web Rest API with Python over FastAPI framework.
+                            </div>
+                            <div class="project__content--screenshot">
+                                <img
+                                    src="https://github.com/pantaflex44/PythonBaseApi/raw/v1/pba.png"
+                                    alt="PythonBaseApi"
+                                    loading="lazy"
+                                />
+                            </div>
+                        </div>
+                        <ul class="project__content--languages">
+                            <li>Python</li>
+                            <li>FastAPI</li>
+                            <li>Rest API</li>
+                            <li>JWT</li>
+                        </ul>
+                    </div>
+
+                    <div class="project">
+                        <h3
+                            class="project__title"
+                            title="Charles Cantin - Photographe sur Github"
+                            onclick="window.open('https://github.com/pantaflex44/studi-evals/tree/eval3', '_blank').focus();"
+                        >
+                            Charles Cantin - Photographe
+                            <img src="./github.svg" alt="Charles Cantin - Photographe" />
+                        </h3>
+                        <div class="project__content">
+                            <div class="project__content--description">
+                                L’objectif demandé, est la réalisation de la partie Front d’un site vitrine (portfolio)
+                                pour un photographe particulier nommé Charles Cantin. Cette application devra se reposer
+                                sur un Backend disponible et fonctionnel auquel nous confierons la gestion du contenu.
+                                Un CMS Headless fera parfaitement l’affaire. Pour cette réalisation, il m’est demandé
+                                d’effectuer une petite étude UI/UX pour laquelle je partage la chartre graphique, et les
+                                maquettes / wireframes (version mobile et desktop) mettant en valeur l’interface de la
+                                future vitrine web. Par ailleurs, les polices d’écritures employées devront être
+                                indiquées dans un document annexe.
+                            </div>
+                            <div class="project__content--screenshot">
+                                <img
+                                    src="https://github.com/pantaflex44/studi-evals/raw/eval3/src/assets/charles-cantin.jpg"
+                                    alt="Charles Cantin - Photographe"
+                                    loading="lazy"
+                                />
+                            </div>
+                            <ul class="project__content--languages">
+                                <li>NodeJs</li>
+                                <li>Jest</li>
+                                <li>ReactJs</li>
+                                <li>SASS</li>
+                                <li>CSS</li>
+                                <li>Javascript</li>
+                                <li>CMS Headless</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="project">
+                        <h3
+                            class="project__title"
+                            title="Kotidien sur Github"
+                            onclick="window.open('https://github.com/pantaflex44/kotidien', '_blank').focus();"
+                        >
+                            Kotidien
+                            <img src="./github.svg" alt="Kotidien" />
+                        </h3>
+                        <div class="project__content">
+                            <div class="project__content--description">
+                                Kotidien est une application dédiée à la gestion de votre argent. Comptes bancaires,
+                                cartes de paiements autonomes, et portefeuille d'espèces. Totalement libre et gratuite,
+                                elle vous permet de tenir vos comptes d'une main de fer. Écrite en Python 3 et
+                                compatible Linux (intégration parfaite sous KDE via l'utilisation de QT 5.12), Microsoft
+                                Windows 7 et supérieurs, Mac OS 10.11 et supérieurs. Kotidien vous donne un accès
+                                permanent et en temps réel sur vos différents soldes, permet aussi d'automatiser
+                                l'écriture de vos transaction récurrentes, de pointer celles mises à jour sur votre
+                                interface bancaire, etc Agencées au jour le jour, supplantées par une vue calendrier, et
+                                synthétisées sur des graphiques clairs, toutes vos transactions sont réunies au sein de
+                                Kotidien. La complétion automatique des différentes informations permet une saisie plus
+                                rapide des données. Plusieurs languages vous sont proposés avec par défaut le Français.
+                            </div>
+                            <div class="project__content--screenshot">
+                                <img
+                                    src="https://camo.githubusercontent.com/253fa88bd7bf3078f247e0a1f2c81fdcceeec44763be8edbf6a53364b3cc1826/68747470733a2f2f612e6673646e2e636f6d2f636f6e2f6170702f70726f6a2f6b6f74696469656e2f73637265656e73686f74732f4b6f74696469656e322e706e672f6d61782f6d61782f31"
+                                    alt="Kotidien"
+                                    loading="lazy"
+                                />
+                            </div>
+                            <ul class="project__content--languages">
+                                <li>Python</li>
+                                <li>PyQT</li>
+                                <li>Multi-Plateforme</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="content__main contact" data-sticky-menu-classname="sticky__menubar--contact">
+                <div class="content">
+                    <div class="shadow-title">Me contacter</div>
+                    <h2>
+                        Me contacter
+                        <img
+                            src="./linkedin.svg"
+                            alt="LinkedIn"
+                            title="Mon profil LinkedIn"
+                            onclick="window.open('https://www.linkedin.com/in/pf44/', '_blank').focus();"
+                        />
+                    </h2>
+
+                    <p>
+                        Vous pouvez me retrouver via mon profil <em>LinkedIn</em> ou au travers mes dépots
+                        <em>Github</em>.
+                    </p>
+                    <p>
+                        <strong>
+                            Pour une communication plus directe, je vous propose le formulaire ci-dessous. Je vous
+                            répondrai au plus vite!</strong
+                        >
+                    </p>
+
+                    <p>&nbsp;</p>
+
+                    <div class="form__row">
+                        <input
+                            id="contact_name"
+                            type="text"
+                            placeholder="Nom et Prénom"
+                            aria-label="Nom et Prénom"
+                            required
+                            autocomplete="family-name"
+                        />
+                        <input
+                            id="contact_email"
+                            type="email"
+                            placeholder="Email"
+                            aria-label="Votre adresse email"
+                            required
+                            autocomplete="email"
+                        />
+                    </div>
+
+                    <div class="form__row">
+                        <input
+                            id="contact_subject"
+                            type="text"
+                            placeholder="Sujet"
+                            aria-label="Sujet du message"
+                            required
+                            autocomplete="none"
+                        />
+                    </div>
+
+                    <div class="form__row">
+                        <textarea
+                            id="contact_message"
+                            rows="10"
+                            placeholder="Message"
+                            aria-label="Message"
+                            required
+                            autocomplete="none"
+                        ></textarea>
+                    </div>
+
+                    <div class="form__row">
+                        <button onclick="sendMail(this)">Envoyer le message</button>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </body>
+</html>
