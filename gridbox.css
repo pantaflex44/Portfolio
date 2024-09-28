@@ -1,0 +1,126 @@
+.gridbox {
+    width: 100%;
+    margin-top: -1px;
+    margin-left: -1px;
+    margin-right: -1px;
+
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(max(var(--gridbox-block-min-width), calc(100% / var(--columns, 4))), 1fr));
+
+    border-left: var(--section-border-width) solid var(--border-color);
+    border-right: var(--section-border-width) solid var(--border-color);
+
+    counter-reset: gridboxCounter;
+}
+
+.gridbox.colspan {
+    grid-template-columns: repeat(auto-fill, minmax(max(calc(var(--gridbox-block-min-width) * 2), calc(100% / var(--columns, 4))), 1fr));
+}
+
+.gridbox>.gridbox_item {
+    position: relative;
+
+    aspect-ratio: 1;
+
+    margin-right: -1px;
+    margin-bottom: -1px;
+    margin-left: 1px;
+
+    border-top: var(--section-border-width) solid transparent;
+    border-right: var(--section-border-width) solid transparent;
+    border-bottom: var(--section-border-width) solid transparent;
+
+    overflow: hidden;
+}
+
+.gridbox.with-internal-borders>.gridbox_item {
+    border-top-color: var(--border-color);
+    border-right-color: var(--border-color);
+    border-bottom-color: var(--border-color);
+}
+
+.gridbox>.gridbox_item>* {
+    width: 100%;
+    height: 100%;
+}
+
+.gridbox.colspan>.gridbox_item {
+    aspect-ratio: 2/1;
+
+    display: flex;
+}
+
+.gridbox.with-counter>.gridbox_item>* {
+    counter-increment: gridboxCounter;
+
+    padding-top: 3em;
+}
+
+.gridbox.with-counter>.gridbox_item>*::before {
+    position: absolute;
+
+    content: counter(gridboxCounter, decimal-leading-zero);
+
+    display: block;
+
+    font-size: small;
+    font-weight: 200;
+    letter-spacing: 2px;
+    line-height: 1.5;
+
+    top: 1.7em;
+    left: 1.7em;
+
+    opacity: 0.7;
+    z-index: 2;
+}
+
+.gridbox.with-title>.gridbox_item>* {
+    padding-top: 3em;
+}
+
+.gridbox.with-title>.gridbox_item>*::before {
+    position: absolute;
+
+    content: attr(data-title);
+
+    display: block;
+
+    font-size: small;
+    font-weight: 200;
+    letter-spacing: 2px;
+    line-height: 1.5;
+
+    top: 1.7em;
+    left: 0;
+
+    padding-inline: 1.7em;
+
+    opacity: 0.7;
+    z-index: 2;
+}
+
+.gridbox.with-description>.gridbox_item>* {
+    padding-top: 3em;
+}
+
+.gridbox.with-description>.gridbox_item>*::before {
+    position: absolute;
+
+    content: attr(data-description);
+
+    display: block;
+
+    font-size: small;
+    font-weight: 400;
+    letter-spacing: 2px;
+    line-height: 1.4;
+
+    top: 1.7em;
+    left: 0;
+
+    padding-inline: 1.7em;
+
+    opacity: 0.9;
+    z-index: 2;
+}

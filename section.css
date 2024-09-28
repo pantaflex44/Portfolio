@@ -1,0 +1,93 @@
+section {
+    position: relative;
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: stretch;
+    gap: 0;
+
+    width: 100%;
+    height: 100%;
+
+    margin-top: -1px;
+
+    background-color: var(--background-color);
+    color: var(--color);
+
+    border-top: var(--section-border-width) solid var(--border-color);
+    border-bottom: var(--section-border-width) solid var(--border-color);
+}
+
+section.hero {
+    height: calc(var(--hero-height) + 1px);
+}
+
+section>div.section_content {
+    width: var(--section-width);
+    max-width: var(--section-max-width);
+
+    margin-left: -1px;
+    margin-right: -1px;
+
+    overflow: hidden;
+}
+
+section::before,
+section::after {
+    content: '';
+    flex: 1;
+
+    display: block;
+
+    width: calc((100vw - min(var(--section-width), var(--section-max-width))) / 2);
+}
+
+section::before {
+    border-right: var(--section-border-width) solid var(--border-color);
+}
+
+section::after {
+    border-left: var(--section-border-width) solid var(--border-color);
+}
+
+section.outer-hatching::before,
+section.outer-hatching::after {
+    background: linear-gradient(45deg, var(--border-color-light) 1%, transparent 1%, transparent 49%, var(--border-color-light) 49%, var(--border-color-light) 51%, transparent 51%, transparent 99%, var(--border-color-light) 99%);
+    background-size: 6px 6px;
+    background-position: 50px 50px;
+}
+
+section.inner-hatching {
+    background: linear-gradient(45deg, var(--border-color-light) 1%, var(--background-color) 1%, var(--background-color) 49%, var(--border-color-light) 49%, var(--border-color-light) 51%, var(--background-color) 51%, var(--background-color) 99%, var(--border-color-light) 99%);
+    background-size: 6px 6px;
+    background-position: 50px 50px;
+}
+
+@media (max-width: 899px) {
+    section.hero .columns {
+        height: calc(var(--hero-height) + 1px);
+        min-height: initial !important;
+
+        gap: 0;
+    }
+
+    section.hero .columns article {
+        width: 100%;
+        min-height: initial;
+        height: 50%;
+    }
+
+    section.hero .columns article:first-child {
+        padding-bottom: calc(var(--article-padding-block) * 0.5);
+    }
+
+    section.hero .columns article:last-child {
+        padding-top: calc(var(--article-padding-block) * 0.5);
+    }
+
+    section.hero .columns article img {
+        
+    }
+}

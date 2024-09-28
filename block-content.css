@@ -1,0 +1,17 @@
+.block-content {
+    width: 100%;
+    height: 100%;
+    padding: 1.5em;
+}
+
+.block-content.middle {
+    align-self: center;
+
+    margin-top: 2em;
+}
+
+.block-content.on-top {
+    z-index: 2;
+
+    text-shadow: -3px 0 var(--background-color), 0 3px var(--background-color), 3px 0 var(--background-color), 0 -3px var(--background-color);
+}

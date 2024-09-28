@@ -1,0 +1,72 @@
+.flip {
+    width: 100%;
+    height: var(--hero-height);
+
+    perspective: var(--section-width);
+}
+
+.flip_inner {
+    position: relative;
+
+    width: 100%;
+    height: var(--hero-height);
+
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+}
+
+.flip_action,
+.flip_close {
+    cursor: pointer;
+
+    transition: var(--transition-duration) var(--transition-type);
+}
+
+.flip_close:hover {
+    transform: scale(1.2);
+}
+
+.flip_inner-front,
+.flip_inner-back {
+    position: absolute;
+
+    width: 100%;
+    height: var(--hero-height);
+
+    -webkit-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+    -ms-backface-visibility: hidden;
+    backface-visibility: hidden;
+
+    transition: var(--transition-duration) var(--transition-type);
+}
+
+.flip_inner-back {
+    transform: rotateY(180deg);
+}
+
+.flip_inner-back .flip_close {
+    position: absolute;
+
+    --d: calc(min(var(--section-width), var(--section-max-width)) / 2);
+    top: 1em;
+    left: calc(50% + var(--d) - 30px - 0.5em);
+    width: 24px;
+    height: 24px;
+
+    transform: translateX(-50%);
+
+    z-index: 3;
+
+    font-weight: 900;
+}
+
+.flip:has(.flip_action:focus) .flip_inner,
+.flip:has(.flip_inner-back:focus-within) .flip_inner {
+    transform: rotateY(180deg);
+}
+
+.flip:has(.flip_action:focus) .flip_inner .flip_inner-front,
+.flip:has(.flip_inner-back:focus-within) .flip_inner .flip_inner-front {
+    opacity: 0;
+}

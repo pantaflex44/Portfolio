@@ -1,0 +1,23 @@
+.iconview {
+    width: 100%;
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 2em;
+}
+
+.iconview a {
+    color: var(--gray-900);
+    text-decoration: none;
+
+    transition: 150ms  ease;
+}
+
+.iconview a:hover {
+    color: var(--black);
+
+    transform: scale(1.2);
+}

@@ -1,0 +1,319 @@
+h1 {
+    margin-bottom: 0.5em;
+
+    font-size: 200%;
+    font-weight: 700;
+    line-height: 1;
+}
+
+h1:not(:first-child) {
+    margin-top: 1.5em;
+}
+
+h2 {
+    margin-bottom: 0.5em;
+
+    font-size: 180%;
+    font-weight: 600;
+    line-height: 1;
+}
+
+h2:not(:first-child) {
+    margin-top: 1.5em;
+}
+
+h3 {
+    margin-bottom: 0.5em;
+
+    font-size: 160%;
+    font-weight: 500;
+    line-height: 1;
+}
+
+h3:not(:first-child) {
+    margin-top: 1.5em;
+}
+
+h4 {
+    position: relative;
+
+    margin-bottom: calc(0.5em + 8px);
+
+    font-size: 140%;
+    font-weight: 500;
+    line-height: 1;
+}
+
+h4::after {
+    content: '';
+
+    position: absolute;
+
+    bottom: -4px;
+    left: 0;
+    width: 100%;
+    height: 3px;
+
+    background-color: var(--gray-100);
+}
+
+h4:not(:first-child) {
+    margin-top: 1.5em;
+}
+
+h5 {
+    position: relative;
+
+    margin-bottom: 0.5em;
+
+    font-size: 120%;
+    font-weight: 500;
+    line-height: 1;
+
+    color: var(--gray-700);
+}
+
+h5:not(:first-child) {
+    margin-top: 1.5em;
+}
+
+h6 {
+    margin-bottom: 0.5em;
+
+    font-size: 100%;
+    font-weight: 500;
+    line-height: 1;
+}
+
+h6::before {
+    content: '🢖';
+
+    margin-right: 0.5em;
+
+    font-size: 80%;
+}
+
+h6:not(:first-child) {
+    margin-top: 1.5em;
+}
+
+h1+h2, h1+h3, h1+h4, h1+h5, h1+h6,
+h2+h3, h2+h4, h2+h5, h2+h6,
+h3+h4, h3+h5, h3+h6,
+h4+h5, h4+h6,
+h5+h6 {
+    margin-top: 0 !important;
+    margin-bottom: 1em !important;
+
+    color: var(--gray-500);
+}
+
+h1+h2::before, h1+h3::before, h1+h4::before, h1+h5::before, h1+h6::before,
+h2+h3::before, h2+h4::before, h2+h5::before, h2+h6::before,
+h3+h4::before, h3+h5::before, h3+h6::before,
+h4+h5::before, h4+h6::before,
+h5+h6::before {
+    content: '';
+
+    display: none;
+}
+
+h1+h2::after, h1+h3::after, h1+h4::after, h1+h5::after, h1+h6::after,
+h2+h3::after, h2+h4::after, h2+h5::after, h2+h6::after,
+h3+h4::after, h3+h5::after, h3+h6::after,
+h4+h5::after, h4+h6::after,
+h5+h6::after {
+    content: '';
+
+    display: none;
+}
+
+h1:has(+h2), h1:has(+h3), h1:has(+h4), h1:has(+h5), h1:has(+h6),
+h2:has(+h3), h2:has(+h4), h2:has(+h5), h2:has(+h6),
+h3:has(+h4), h3:has(+h5), h3:has(+h6),
+h4:has(+h5), h4:has(+h6),
+h5:has(+h6) {
+    margin-bottom: 0 !important;
+}
+
+p {
+    line-height: 1.5;
+}
+
+p:not(:last-child) {
+    margin-bottom: 0.75em;
+}
+
+p.excerpt {
+    margin-block: 1.5em;
+
+    font-size: 115%;
+    font-weight: 300;
+
+    color: var(--black);
+}
+
+p a {
+    position: relative;
+
+    display: inline-block;
+
+    margin-left: 2px;
+    margin-right: 20px;
+
+    color: var(--black);
+    text-decoration: none;
+
+    transition: var(--transition-duration) var(--transition-type);
+}
+
+p a::before {
+    content: '';
+
+    position: absolute;
+
+    left: 0;
+    width: 100%;
+    bottom: -1px;
+    height: 2px;
+
+    background: var(--black);
+
+    transition: var(--transition-duration) var(--transition-type);
+}
+
+p a:hover::before {
+    background: var(--black);
+}
+
+p a::after {
+    content: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round' class='icon icon-tabler icons-tabler-outline icon-tabler-arrow-up-right'%3E%3Cpath stroke='none' d='M0 0h24v24H0z' fill='none'/%3E%3Cpath d='M17 7l-10 10' /%3E%3Cpath d='M8 7l9 0l0 9' /%3E%3C/svg%3E");
+
+    position: absolute;
+
+    top: -2px;
+    right: -18px;
+
+    opacity: 0.7;
+    transition: var(--transition-duration) var(--transition-type);
+}
+
+p a[href^='http']::after {
+    content: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round' class='icon icon-tabler icons-tabler-outline icon-tabler-world-upload'%3E%3Cpath stroke='none' d='M0 0h24v24H0z' fill='none'/%3E%3Cpath d='M21 12a9 9 0 1 0 -9 9' /%3E%3Cpath d='M3.6 9h16.8' /%3E%3Cpath d='M3.6 15h8.4' /%3E%3Cpath d='M11.578 3a17 17 0 0 0 0 18' /%3E%3Cpath d='M12.5 3c1.719 2.755 2.5 5.876 2.5 9' /%3E%3Cpath d='M18 21v-7m3 3l-3 -3l-3 3' /%3E%3C/svg%3E");
+}
+
+.footer a {
+    font-weight: 500 !important;
+
+    margin-right: 2px !important;
+}
+
+.footer a::before,
+.footer a::after {
+    content: '' !important;
+    display: none !important;
+    width: 0px;
+}
+
+.dark p a::after,
+.dark p a[href^='http']::after {
+    filter: invert();
+}
+
+p a:hover::after {
+    transform: rotate(360deg);
+}
+
+p span.important {
+    color: var(--black);
+    font-weight: 500;
+}
+
+b, strong {
+    font-weight: 700;
+}
+
+u {
+    text-decoration: underline;
+}
+
+em {
+    font-style: italic;
+}
+
+sup.exponent {
+    font-size: small;
+    font-weight: 300;
+}
+
+.display1 {
+    font-size: 2rem;
+    font-size: clamp(2rem, 1.7272727272727273rem + 1.4545454545454546vw, 3rem);
+}
+
+.display2 {
+    font-size: 1.5rem;
+    font-size: clamp(1.5rem, 1.2272727272727273rem + 1.4545454545454546vw, 2.5rem);
+}
+
+.display3 {
+    font-size: 1.33rem;
+    font-size: clamp(1.33rem, 1.0927272727272728rem + 1.2654545454545456vw, 2.2rem);
+}
+
+.display4 {
+    font-size: 1.2rem;
+    font-size: clamp(1.2rem, 1.009090909090909rem + 1.018181818181818vw, 1.9rem);
+}
+
+.display5 {
+    font-size: 1.1rem;
+    font-size: clamp(1.1rem, 0.9363636363636365rem + 0.8727272727272726vw, 1.7rem);
+}
+
+.display6 {
+    font-size: 1rem;
+    font-size: clamp(1rem, 0.8636363636363636rem + 0.7272727272727273vw, 1.5rem);
+}
+
+.black {
+    color: var(--black);
+}
+
+.white {
+    color: var(--white);
+}
+
+.heavy {
+    font-weight: 700;
+}
+
+.second {
+    color: var(--gray-800);
+}
+
+.third {
+    color: var(--gray-500);
+}
+
+small,
+.small {
+    font-size: 80%;
+}
+
+hr {
+    width: 100%;
+    height: 1px;
+
+    padding: 0;
+    margin: var(--article-padding-block) 0;
+
+    border: 0;
+    background-color: var(--border-color);
+}
+
+article hr {
+    width: calc(100% + 3em);
+
+    margin-inline: calc(-1 * var(--article-padding-block));
+}
