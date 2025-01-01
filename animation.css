@@ -16,7 +16,8 @@
 
     background-color: var(--black);
 
-    animation: aline1 5s ease-in-out infinite;
+    filter: opacity(0.3);
+    animation: aline1 120s ease-in-out infinite;
     z-index: 0;
 }
 
@@ -31,7 +32,8 @@
 
     background-color: var(--gray-700);
 
-    animation: aline2 12s ease-in-out infinite;
+    filter: opacity(0.3);
+    animation: aline2 350s ease-in-out infinite;
     z-index: 0;
 }
 
@@ -46,21 +48,22 @@
 
     background-color: var(--gray-300);
 
-    animation: aline3 15s ease-in-out infinite;
+    filter: opacity(0.3);
+    animation: aline3 370s ease-in-out infinite;
     z-index: 0;
 }
 
 @keyframes aline1 {
     0% {
-        transform: rotate(0deg) translateY(100px) translateX(-100px);
-    }
-
-    50% {
         transform: rotate(250deg) translateY(-100px) translateX(100px) scale(4);
     }
 
-    100% {
+    50% {
         transform: rotate(360deg) translateY(100px) translateX(-100px);
+    }
+
+    100% {
+        transform: rotate(0deg) translateY(100px) translateX(-100px);
     }
 }
 

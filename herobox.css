@@ -9,7 +9,7 @@
     position: absolute;
 
     left: 1.5em;
-    top: 20%;
+    top: 12%;
 
     width: max-content;
     max-width: calc(100% - 3em);
@@ -23,7 +23,7 @@
     color: var(--black);
     text-shadow: -3px 0 var(--background-color), 0 3px var(--background-color), 3px 0 var(--background-color), 0 -3px var(--background-color);
 
-    z-index: 1;
+    z-index: 3;
 }
 
 .hero_box-date {
@@ -45,13 +45,15 @@
 
     transform-origin: left;
     transform: rotate(-15deg);
+
+    z-index: 2;
 }
 
 .hero_box-place {
     position: absolute;
 
     left: 4.5em;
-    top: 70%;
+    top: 65%;
     height: 110px;
     width: max-content;
     max-width: calc(100% - 4em);
@@ -63,8 +65,14 @@
 
     color: var(--gray-800);
     text-shadow: -3px 0 var(--background-color), 0 3px var(--background-color), 3px 0 var(--background-color), 0 -3px var(--background-color);
+
+    z-index: 3;
 }
 
 .hero_box-photo {
-    margin-top: -1.8em;
+    margin-top: -4em;
+
+    filter: opacity(0.2);
+
+    z-index: 1;
 }

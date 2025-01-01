@@ -249,31 +249,43 @@ sup.exponent {
 .display1 {
     font-size: 2rem;
     font-size: clamp(2rem, 1.7272727272727273rem + 1.4545454545454546vw, 3rem);
+    overflow-wrap: break-word;
+    hyphens: manual;
 }
 
 .display2 {
     font-size: 1.5rem;
     font-size: clamp(1.5rem, 1.2272727272727273rem + 1.4545454545454546vw, 2.5rem);
+    overflow-wrap: break-word;
+    hyphens: manual;
 }
 
 .display3 {
     font-size: 1.33rem;
     font-size: clamp(1.33rem, 1.0927272727272728rem + 1.2654545454545456vw, 2.2rem);
+    overflow-wrap: break-word;
+    hyphens: manual;
 }
 
 .display4 {
     font-size: 1.2rem;
     font-size: clamp(1.2rem, 1.009090909090909rem + 1.018181818181818vw, 1.9rem);
+    overflow-wrap: break-word;
+    hyphens: manual;
 }
 
 .display5 {
     font-size: 1.1rem;
     font-size: clamp(1.1rem, 0.9363636363636365rem + 0.8727272727272726vw, 1.7rem);
+    overflow-wrap: break-word;
+    hyphens: manual;
 }
 
 .display6 {
     font-size: 1rem;
     font-size: clamp(1rem, 0.8636363636363636rem + 0.7272727272727273vw, 1.5rem);
+    overflow-wrap: break-word;
+    hyphens: manual;
 }
 
 .black {

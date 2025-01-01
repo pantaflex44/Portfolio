@@ -1,5 +1,5 @@
 .block-content {
-    width: 100%;
+    width: calc(100% - 3em);
     height: 100%;
     padding: 1.5em;
 }
@@ -8,6 +8,7 @@
     align-self: center;
 
     margin-top: 2em;
+    margin-left: 2em;
 }
 
 .block-content.on-top {
